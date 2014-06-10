@@ -1,0 +1,501 @@
+
+<!-- header -------------------------------------------->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Test Tickets</title>
+	<meta name="description" content="">
+
+	<meta name="robots" content="index, follow, noarchive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+	<script src="assets/js/bootstrap-2.2.2.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+</head>
+<body id="event-section" class="view-page">
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+
+				<a class="brand" href="home_list_page.html">Test Tickets</a>
+
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Ted <b class="caret"></b></a>
+
+																<ul class="dropdown-menu">
+
+										<li><a href="account_edit_profile.html">Edit Profile</a></li>
+
+
+										<li><a href="account_change_password.html">Change Password</a></li>
+
+
+										<li><a href="account_purchase_history.html">Purchase History</a></li>
+
+
+										<li><a href="account_membership_cards.html">Membership Cards</a></li>
+
+
+									<li class="divider"></li>
+									<li><a href="account_logout.html">Log out</a>
+								</ul>
+							</li>
+
+							<li class="divider-vertical"></li>
+							<li><a href="purchase_cart.html"><i class="icon-shopping-cart icon-white"></i> <strong>1</strong> (<span id="cart-expiry">15:00</span>)</a></li>
+
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function() {
+			$('#cart-expiry').countdown({
+				until: 900,
+				format: 'MS',
+				layout: '{mn}:{snn}',
+				expiryUrl: document.location.href
+			});
+		});
+	</script>
+
+
+<!-- header.end ---------------------------------------->
+
+<div id="content">
+	<div class="container">
+		<div class="row">
+	<div id="event-wrapper" class="span24">
+
+<!-- breadcrumbs -------------------------------------------->
+
+
+	<ul class="breadcrumb">
+		<li><a href="home_list_page.html">Home</a> <span class="divider">/</span></li>
+
+
+			<li><a href="/event.html">Events</a> <span class="divider">/</span></li>
+
+
+		<li class="active">Tenth test typhoon</li>
+	</ul>
+
+
+<!-- breadcrumbs.end ---------------------------------------->
+
+		<div class="page-header">
+			<h1>Tenth test&nbsp;typhoon</h2>
+		</div>
+
+		<div class="event-image pull-right">
+			<img src="http://www.placehold.it/220x325">
+		</div>
+
+		<p>Tenth test&nbsp;typhoon!</p>
+
+		<dl class="dl-horizontal clearfix">
+			<dt>When:</dt>
+
+
+				<dd>31 July 2013, 10:30am</dd>
+
+
+			<dt>Where:</dt>
+			<dd><a href="venue.html">Test Venue</a>, 34 Madras Street , Christchurch</dd>
+
+			<dt>Tags:</dt>
+			<dd><a href="event_tag_list_page.html">music</a>, <a href="#">festival</a></dd>
+
+
+			<dt>Restrictions:</dt>
+			<dd>All Ages</dd>
+
+
+				<dt>Resellers:</dt>
+
+
+					<dd><a href="/outlet/view/2">Real Groovy&nbsp;(Auckland)</a></dd>
+
+
+					<dd><a href="/outlet/view/6">Cosmic Corner (Wellington&nbsp;Cuba)</a></dd>
+
+
+					<dd><a href="/outlet/view/10">Rough Peel Music (Vivian&nbsp;St)</a></dd>
+
+
+					<dd><a href="/outlet/view/20">Quest Store&nbsp;Dunedin</a></dd>
+
+
+					<dd><a href="/outlet/view/34">Cosmic Corner (Wellington&nbsp;Manners)</a></dd>
+
+
+					<dd><a href="/outlet/view/43">i-SITE Hutt&nbsp;City</a></dd>
+
+
+					</dl>
+
+
+			<div class="clearfix">
+				<h3>Ticket Options</h3>
+
+				<form action="/cart/add_tickets?return=cart/add_tickets" method="post" accept-charset="utf-8" id="ticket-form"><div style="display:none">
+<input type="hidden" name="item_type_id" value="1" />
+</div>
+
+						<h4>Standard Tickets</h4>
+						<table class="table">
+							<tbody>
+
+
+										<tr>
+											<td>General&nbsp;Admission</td>
+											<td class="span2 align-center">$5.00&nbsp;+&nbsp;<abbr title="Booking Fee">BF</abbr></td>
+											<td class="span3 align-center"><select name="tickets[3178]" class="input-mini">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></td>
+										</tr>
+
+
+
+
+										<tr>
+											<td>VIP</td>
+											<td class="span2 align-center">$20.00&nbsp;+&nbsp;<abbr title="Booking Fee">BF</abbr></td>
+											<td class="span3 align-center"><select name="tickets[4278]" class="input-mini">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select></td>
+										</tr>
+
+
+															</tbody>
+						</table>
+
+					<div class="pull-right">
+						<button type="submit" class="btn btn-large" data-target="#">Add to Cart</button>
+						<button type="submit" class="btn btn-large btn-primary" data-target="/cart">Checkout</button>
+					</div>
+				</form>
+			</div>
+
+
+		<p>Tenth test typhoon!</p>
+	</div>
+</div>
+
+<!-- modal -------------------------------------------->
+<div id="purchase-code" class="modal hide fade">
+	<div class="modal-header">
+		<a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+		<h3>Purchase Code</h3>
+	</div>
+
+	<div class="modal-body">
+		<div id="purchase-code-error" class="alert alert-block alert-error hide">
+	<h4></h4>
+</div>
+
+<form action="/event/view/mwrsvq509" accept-charset="utf-8" method="post" id="purchase-code-form" class="form-horizontal">
+	<div class="control-group">
+		<label class="control-label">Purchase Code</label>
+		<div class="controls">
+			<input type="text" name="purchase_code" value="" id="purchase_code" class="span6"  />		</div>
+	</div>
+
+</form>
+<script>
+	$(function() {
+		$('#purchase-code-form').submit(function(e) {
+			e.preventDefault();
+		});
+	});
+</script>
+	</div>
+
+			<div class="modal-footer">
+
+
+				<a href="#" id="submit" class="btn btn-primary">Submit</a>
+
+					</div>
+	</div>
+
+<!-- modal.end ---------------------------------------->
+
+
+<div id="login-popup" class="modal hide fade in">
+	<div class="modal-header">
+		<a href="#" class="close" data-dismiss="modal" aria-hidden="true">×</a>
+		<h3>How would you like to continue?</h3>
+	</div>
+
+	<div class="modal-body">	<p><a href="#" class="btn btn-large btn-block btn-facebook">Use your Facebook account</a></p>
+	<p class="or"><span>or</span></p>
+
+<div id="login-error" class="alert alert-error alert-block hide fade in">
+	<h4 class="alert-heading">Please correct the following errors:</h4>
+	<ul>
+	</ul>
+</div>
+
+<form action="" method="post" accept-charset="utf-8">	<input type="email" name="email" value="" class="input-block-level" autofocus="autofocus" placeholder="Please enter your email address">
+	<div id="password-control" class="hide">
+		<input type="password" name="password" value="" class="input-block-level">		<small><a href="signin_forgot_password.html">Forgot password?</a></small>
+	</div>
+
+	<button name="login" type="submit" class="btn btn-large btn-block btn-inverse">Continue</button></form>
+<style>
+	#password-control {
+		margin-bottom: 10px;
+	}
+	#password-control input {
+		margin-bottom: 5px;
+	}
+</style>
+
+<script>
+	$(function() {
+		var $this = $('#login-popup');
+		var $form = $this.find('form');
+		var $button = $form.find('button[type=submit]');
+		var $passwordControl = $('#password-control');
+		var $errorContainer = $('#login-error');
+
+		function postJSON(url, data, callback) {
+			$.post(url, data, callback, 'json');
+		}
+
+		function hideErrors() {
+			$errorContainer.hide();
+		}
+
+		function showErrors(errors) {
+			var $errorContainerList = $errorContainer.hide().find('ul').empty();
+
+			$.each(errors, function(field, error) {
+				$('<li ></li>').text(error).appendTo($errorContainerList);
+			});
+
+			$errorContainer.show();
+		}
+
+		function showPassword(placeholder) {
+			$passwordControl.find('input').attr('placeholder', placeholder).end().slideDown(100, function() {
+				$(this).find('input').focus();
+			});
+		}
+
+ 		$button.on('click', function(e) {
+ 			var user = $form.serialize();
+
+ 			e.preventDefault();
+
+ 			hideErrors();
+ 			postJSON('/account/ajax_check', user, function(response) {
+ 				if (response.errors) {
+ 					showErrors(response.errors);
+ 				}
+
+ 				if (response.success) {
+ 					$button.off('click');
+
+ 					if (response.user) {
+						showPassword('Please enter your password');
+					} else {
+						showPassword('Please enter a password');
+					}
+ 				}
+			});
+		});
+
+		$form.on('submit', function(e) {
+			var user = $form.serialize();
+			var target = $this.data('target');
+			var tickets = $this.data('tickets');
+
+			e.preventDefault();
+
+			hideErrors();
+			postJSON('/account/ajax_login', user, function(response) {
+				if (response.errors) {
+ 					showErrors(response.errors);
+ 				}
+
+ 				if (response.success) {
+ 					postJSON('/cart/ajax_add_tickets', tickets, function(response) {
+ 						if (response.errors) {
+		 					showErrors(response.errors);
+		 				}
+
+ 						if (response.success) {
+ 							$this.modal('hide');
+
+ 							document.location = target;
+ 						}
+ 					});
+ 				}
+			});
+		});
+
+	});
+</script></div>
+
+	</div>
+
+<script>
+	var $ticket_form, $ticket_button, $purchase_code_popup, $login_popup;
+
+	function checkPurchaseCodes(codes) {
+		for (var i = codes.length - 1; i >= 0; i--) {
+			if (codes[i].purchase_code) {
+				return true;
+			}
+		};
+
+		return false;
+	}
+
+	function checkSelectBoxes() {
+		return $ticket_form.find('select').filter(function() {
+				return $(this).val() > 0;
+		}).length;
+	}
+
+	$(function() {
+		var target;
+
+		$ticket_form = $('#ticket-form');
+		$ticket_button = $ticket_form.find('button[type="submit"]');
+
+		$purchase_code_popup = $('#purchase-code');
+		$purchase_code_field = $('#purchase_code');
+		$purchase_code_error = $('#purchase-code-error');
+
+		$purchase_code_popup.modal({
+			show: false
+		}).on('shown', function() {
+			$(this).find('input').first().focus();
+		});
+
+		if (checkSelectBoxes()) {
+			$ticket_button.removeAttr('disabled');
+		} else {
+			$ticket_button.attr('disabled', 'disabled');
+		}
+
+		$ticket_form.find('select').change(function() {
+			if (checkSelectBoxes()) {
+				$ticket_button.removeAttr('disabled');
+			} else {
+				$ticket_button.attr('disabled', 'disabled');
+			}
+		});
+
+		$ticket_button.click(function(e) {
+			e.preventDefault();
+
+			// save this for later when the popup opens
+			target = $(this).data('target');
+
+			$ticket_form.submit();
+		});
+
+					$login_popup = $('#login-popup'), logged_in = 0;
+
+			$login_popup.modal({
+				show: false
+			}).on('shown', function() {
+				$(this).find('input').first().focus();
+			});
+
+			$ticket_form.on('submit', function(e) {
+				var tickets = $(this).serialize();
+
+				e.preventDefault();
+
+				if (logged_in) {
+					$.post('/cart/ajax_add_tickets', tickets, function(response) {
+						if (response.success) {
+							console.log(target);
+							document.location = target;
+						}
+					}, 'json');
+				} else {
+					// attach the ticket data so we can access it within the popup
+					$login_popup.data({
+						target: target,
+						tickets: tickets
+					}).modal('show');
+				}
+			});
+			});
+</script>
+
+	</div>
+</div>
+
+
+
+
+<!-- footer -------------------------------------------->
+    <div id="footer">
+        <div class="container">
+            <p class="pull-left">Copyright &copy; 2012 Test Tickets</p>
+            <p class="pull-right">Powered by <a href="http://www.dashtickets.co.nz" target="_blank">Dash Tickets</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- footer.end ---------------------------------------->

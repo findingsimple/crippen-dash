@@ -1,0 +1,175 @@
+
+<!-- header -------------------------------------------->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Test Tickets</title>
+	<meta name="description" content="">
+
+	<meta name="robots" content="index, follow, noarchive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+	<script src="assets/js/bootstrap-2.2.2.min.js"></script>
+</head>
+<body id="tour-section" class="view-page">
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+
+				<a class="brand" href="home_list_page.html">Test Tickets</a>
+
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+
+							<li><a href="signin_login.html">Log in</a></li>
+							<li><a href="signin_register.html">Sign up</a></li>
+
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- header.end ---------------------------------------->
+
+<div id="content">
+	<div class="container">
+		<div class="row">
+	<div id="event-wrapper" class="span24">
+
+<!-- breadcrumbs -------------------------------------------->
+
+
+	<ul class="breadcrumb">
+		<li><a href="home_list_page.html">Home</a> <span class="divider">/</span></li>
+
+		<li class="active">Parent Tour</li>
+	</ul>
+
+
+<!-- breadcrumbs.end ---------------------------------------->
+
+		<div class="page-header">
+			<h1>Parent Tour</h2>
+		</div>
+
+		<p>Tenth test typhoon!</p>
+
+		<h3>Tours</h3>
+
+		<ol class="event-list">
+			<li>
+				<div class="event-thumbnail">
+					<img src="http://www.placehold.it/60x60">
+				</div>
+				<h4 class="event-title"><a href="tour.html">Test Tour 2</a></h4>
+				<div class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper nisi in leo pharetra tristique. Aenean sed sapien et diam…</div>
+				<div class="event-date">19 September 2012, 1:15pm&mdash;01 December 2013, 3:30pm</div>
+			</li>
+		</ol>
+
+		<h3>Events</h3>
+
+		<ol class="event-list">
+			<li>
+				<div class="event-thumbnail">
+					<img src="http://www.placehold.it/60x60">
+				</div>
+				<h4 class="event-title"><a href="event_ticket_page.html">Test&nbsp;2</a></h4>
+				<div class="event-venue"><a href="venue.html">Test&nbsp;Venue</a>, Christchurch</div>
+				<div class="event-date">30 December 2012, 10:00am&mdash;01 January 2013, 3:00am</div>
+			</li>
+			<li>
+				<div class="event-thumbnail">
+					<img src="http://www.placehold.it/60x60">
+					<div class="sold-out"><span>Sold</span><span>out</span></div>
+				</div>
+				<h4 class="event-title"><a href="event_ticket_page.html">Tenth test&nbsp;typhoon</a></h4>
+				<div class="event-venue"><a href="venue.html">Aurora Centre, Burnside High&nbsp;School</a>, Christchurch</div>
+				<div class="event-date">31 July 2013, 10:30am</div>
+			</li>
+		</ol>
+	</div>
+</div>
+
+<!-- modal -------------------------------------------->
+<div id="purchase-code" class="modal hide fade">
+	<div class="modal-header">
+		<a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+		<h3>Purchase Code</h3>
+	</div>
+
+	<div class="modal-body">
+		<div id="purchase-code-error" class="alert alert-block alert-error hide">
+	<h4></h4>
+</div>
+
+<form action="/event/view/mwrsvq509" accept-charset="utf-8" method="post" id="purchase-code-form" class="form-horizontal">
+	<div class="control-group">
+		<label class="control-label">Purchase Code</label>
+		<div class="controls">
+			<input type="text" name="purchase_code" value="" id="purchase_code" class="span6"  />		</div>
+	</div>
+
+</form>
+<script>
+	$(function() {
+		$('#purchase-code-form').submit(function(e) {
+			e.preventDefault();
+		});
+	});
+</script>
+	</div>
+
+			<div class="modal-footer">
+
+
+				<a href="#" id="submit" class="btn btn-primary">Submit</a>
+
+					</div>
+	</div>
+
+<!-- modal.end ---------------------------------------->
+	</div>
+</div>
+
+
+<!-- footer -------------------------------------------->
+    <div id="footer">
+        <div class="container">
+            <p class="pull-left">Copyright &copy; 2012 Test Tickets</p>
+            <p class="pull-right">Powered by <a href="http://www.dashtickets.co.nz" target="_blank">Dash Tickets</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- footer.end ---------------------------------------->

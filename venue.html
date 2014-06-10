@@ -1,0 +1,179 @@
+
+<!-- header -------------------------------------------->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Test Tickets</title>
+	<meta name="description" content="">
+
+	<meta name="robots" content="index, follow, noarchive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="assets/images/favicon.png">
+
+	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.0.min.js"><\/script>')</script>
+
+	<script src="assets/js/bootstrap-2.2.2.min.js"></script>
+</head>
+<body id="venue-section" class="view-page">
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+
+				<a class="brand" href="home_list_page.html">Test Tickets</a>
+
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Ted <b class="caret"></b></a>
+
+																<ul class="dropdown-menu">
+
+										<li><a href="account_edit_profile.html">Edit Profile</a></li>
+
+
+										<li><a href="account_change_password.html">Change Password</a></li>
+
+
+										<li><a href="account_purchase_history.html">Purchase History</a></li>
+
+
+										<li><a href="account_membership_cards.html">Membership Cards</a></li>
+
+
+									<li class="divider"></li>
+									<li><a href="account_logout.html">Log out</a>
+								</ul>
+							</li>
+
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- header.end ---------------------------------------->
+
+<div id="content">
+	<div class="container">
+		<div class="row">
+	<div class="span24">
+
+<!-- breadcrumbs -------------------------------------------->
+
+
+	<ul class="breadcrumb">
+		<li><a href="home_list_page.html">Home</a> <span class="divider">/</span></li>
+
+
+			<li><a href="/venue.html">Venues</a> <span class="divider">/</span></li>
+
+
+		<li class="active">Test Venue</li>
+	</ul>
+
+
+<!-- breadcrumbs.end ---------------------------------------->
+
+		<div class="page-header">
+			<h1>Test&nbsp;Venue</h2>
+		</div>
+
+		<div id="map_canvas" class="hidden"></div>
+
+		<p>Test&nbsp;venue</p>
+
+		<dl class="dl-horizontal">
+							<dt>Address:</dt>
+				<dd>34 Madras Street, Christchurch</dd>
+
+							<dt>Phone:</dt>
+				<dd>024</dd>
+
+							<dt>Email:</dt>
+				<dd><a href="mailto:nick@dashtickets.co.nz">nick@dashtickets.co.nz</a></dd>
+
+							<dt>Website:</dt>
+				<dd><a href="www.dashtickets.co.nz">www.dashtickets.co.nz</a></dd>
+					</dl>
+
+					<h3>Upcoming Events</h3>
+
+			<table class="table">
+									<tr>
+						<td class="event-thumbnail">
+							<img src="/images/events/thumbnails/event_thumb.jpg">
+						</td>
+						<td>
+							<h4><a href="/event/view/1831">Test&nbsp;2</a></h4>
+							<div><a href="/venue/view/5071">Test&nbsp;Venue</a>, Christchurch</div>
+							<div class="muted">17 May 2013, 10:15am</div>
+						</td>
+					</tr>
+									<tr>
+						<td class="event-thumbnail">
+							<img src="/images/events/thumbnails/event_thumb.jpg">
+						</td>
+						<td>
+							<h4><a href="/event/view/1320">Tenth test&nbsp;typhoon</a></h4>
+							<div><a href="/venue/view/5071">Test&nbsp;Venue</a>, Christchurch</div>
+							<div class="muted">31 July 2013, 10:30am</div>
+						</td>
+					</tr>
+									<tr>
+						<td class="event-thumbnail">
+							<img src="/images/events/thumbnails/asdfsdaf.jpg">
+						</td>
+						<td>
+							<h4><a href="/event/view/1828">Test&nbsp;2</a></h4>
+							<div><a href="/venue/view/5071">Test&nbsp;Venue</a>, Christchurch</div>
+							<div class="muted">01 August 2013, 9:30am</div>
+						</td>
+					</tr>
+							</table>
+			</div>
+</div>
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="assets/js/google-maps.js"></script>
+<script>
+	googleInit('34 Madras Street, Christchurch');
+</script>	</div>
+</div>
+
+
+<!-- footer -------------------------------------------->
+    <div id="footer">
+        <div class="container">
+            <p class="pull-left">Copyright &copy; 2012 Test Tickets</p>
+            <p class="pull-right">Powered by <a href="http://www.dashtickets.co.nz" target="_blank">Dash Tickets</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- footer.end ---------------------------------------->
