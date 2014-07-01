@@ -13,15 +13,7 @@
 	<meta name="robots" content="index, follow, noarchive">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="shortcut icon" href="assets/images/favicon.png">
-
-	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
-
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -31,37 +23,49 @@
 	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.0.min.js"><\/script>')</script>
 
 	<script src="assets/js/bootstrap-2.2.2.min.js"></script>
+
+	<script src="assets/js/masonry-3.1.5.min.js"></script>
+	<script src="assets/js/imagesloaded-3.1.8.min.js"></script>
 </head>
 <body id="account-section" class="register-page">
-	<div class="navbar navbar-inverse navbar-static-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
 
-				<a class="brand" href="home_list_page.html">Test Tickets</a>
-
-				<div class="nav-collapse collapse">
-					<ul class="nav pull-right">
-
-							<li><a href="signin_login.html">Log in</a></li>
-							<li><a href="signin_register.html">Sign up</a></li>
-
-											</ul>
+	<div id="header">
+		<div class="container">
+			<div id="site-title" class="pull-left">
+				<a href="" title="Crippen Place">Crippen Place</a>
+			</div>
+			<div id="header-right" class="pull-right">			
+				<div class="social-media-links">	
+					<a href="http://www.facebook.com/crippenplace" title="Facebook" class="facebook">Facebook</a>
+					<a href="" title="Twitter" class="twitter">Twitter</a>
+					<a href="" title="Vimeo" class="vimeo">Vimeo</a>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div><!-- .container -->
+	</div><!-- #header -->
+
+	<div id="menu-primary" class="menu-container">
+		<div class="container">
+			<div class="wrap">
+				<div class="nav">
+					<ul class="pull-left">
+						<li><a href="">Home</a></li>
+					</ul>
+					<ul class="pull-right">
+						<li><a href="signin_login.html">Log in</a></li>
+						<li><a href="signin_register.html">Sign up</a></li>
+					</ul>
+				</div><!-- .nav -->
+			</div>
+		</div><!-- .container -->
+	</div><!-- .menu-primary -->
 
 
 <!-- header.end ---------------------------------------->
 
 <div id="content">
 	<div class="container">
-		<div class="row">
+		<div class="row-fluid">
 	<div class="span18 offset3">
 		<div class="page-header">
 			<h1>Sign up</h1>
@@ -604,12 +608,14 @@
 
 
 <!-- footer -------------------------------------------->
-    <div id="footer">
+   <div id="footer">
         <div class="container">
-            <p class="pull-left">Copyright &copy; 2012 Test Tickets</p>
-            <p class="pull-right">Powered by <a href="http://www.dashtickets.co.nz" target="_blank">Dash Tickets</a></p>
+        	<div class="wrap">
+            	<p class="pull-left">&copy; Crippen Place, Adelaide</p>
+            </div>
         </div>
     </div>
+	<script src="assets/js/crippen.js"></script>
 </body>
 </html>
 

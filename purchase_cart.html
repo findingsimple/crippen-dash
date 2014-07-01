@@ -14,15 +14,7 @@
 	<meta name="robots" content="index, follow, noarchive">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="shortcut icon" href="assets/images/favicon.png">
-
-	<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png">
-
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" href="assets/css/master.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -32,59 +24,60 @@
 	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.9.0.min.js"><\/script>')</script>
 
 	<script src="assets/js/bootstrap-2.2.2.min.js"></script>
+
+	<script src="assets/js/masonry-3.1.5.min.js"></script>
+	<script src="assets/js/imagesloaded-3.1.8.min.js"></script>
 </head>
 <body id="pro-cart-section" class="index-page">
-	<div class="navbar navbar-inverse navbar-static-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
 
-				<a class="brand" href="home_list_page.html">Test Tickets</a>
-
-				<div class="nav-collapse collapse">
-					<ul class="nav pull-right">
-
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Ted <b class="caret"></b></a>
-
-																<ul class="dropdown-menu">
-
-										<li><a href="account/edit_profile">Edit Profile</a></li>
-
-
-										<li><a href="account/change_password">Change Password</a></li>
-
-
-										<li><a href="account/purchase_history">Purchase History</a></li>
-
-
-										<li><a href="account/membership_cards">Membership Cards</a></li>
-
-
-									<li class="divider"></li>
-									<li><a href="account/logout">Log out</a>
-								</ul>
-							</li>
-
-							<li class="divider-vertical"></li>
-							<li><a href="purchase_cart.html">Cart</a></li>
-
-											</ul>
+	<div id="header">
+		<div class="container">
+			<div id="site-title" class="pull-left">
+				<a href="" title="Crippen Place">Crippen Place</a>
+			</div>
+			<div id="header-right" class="pull-right">			
+				<div class="social-media-links">	
+					<a href="http://www.facebook.com/crippenplace" title="Facebook" class="facebook">Facebook</a>
+					<a href="" title="Twitter" class="twitter">Twitter</a>
+					<a href="" title="Vimeo" class="vimeo">Vimeo</a>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div><!-- .container -->
+	</div><!-- #header -->
+
+	<div id="menu-primary" class="menu-container">
+		<div class="container">
+			<div class="wrap">
+				<div class="nav">
+					<ul class="pull-left">
+						<li><a href="">Home</a></li>
+					</ul>
+					<ul class="pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Test Ted <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="account_edit_profile.html">Edit Profile</a></li>
+								<li><a href="account_change_password.html">Change Password</a></li>
+								<li><a href="account_purchase_history.html">Purchase History</a></li>
+								<li><a href="account_membership_cards.html">Membership Cards</a></li>
+								<li class="divider"></li>
+								<li><a href="account_logout.html">Log out</a>
+							</ul>
+						</li>
+						<li class="divider-vertical"></li>
+						<li><a href="purchase_cart.html">Cart</a></li>
+					</ul>
+				</div><!-- .nav -->
+			</div><!-- .wrap -->
+		</div><!-- .container -->
+	</div><!-- .menu-primary -->
 
 
 <!-- header.end ---------------------------------------->
 
 <div id="content">
 	<div class="container">
-		<div class="row">
+		<div class="row-fluid">
 	<div class="span24">
 
 <!-- breadcrumbs -------------------------------------------->
@@ -141,7 +134,7 @@
 						<tr class="item_row">
 							<td class="item_image">
 								<a href="event_ticket_page.html">
-									<img src="http://www.placehold.it/60x60" alt="Tenth test typhoon">
+									<img src="http://www.placehold.it/312x180" alt="Tenth test typhoon">
 								</a>
 							</td>
 							<td class="item_description">
@@ -162,7 +155,7 @@
 								</div>
 							</td>
 							<td class="item_action">
-								<button type="submit" name="item_id" class="btn btn-small" value="6191">Remove</button>
+								<button type="submit" name="item_id" class="btn btn-small btn-primary" value="6191">Remove</button>
 							</td>
 						</tr>
 
@@ -170,7 +163,7 @@
 						<tr class="item_row">
 							<td class="item_image">
 								<a href="event_ticket_page.html">
-									<img src="http://www.placehold.it/60x60" alt="Tenth test typhoon">
+									<img src="http://www.placehold.it/312x180" alt="Tenth test typhoon">
 								</a>
 							</td>
 							<td class="item_description">
@@ -191,7 +184,7 @@
 								</div>
 							</td>
 							<td class="item_action">
-								<button type="submit" name="item_id" class="btn btn-small" value="6193">Remove</button>
+								<button type="submit" name="item_id" class="btn btn-small btn-primary" value="6193">Remove</button>
 							</td>
 						</tr>
 
@@ -206,17 +199,14 @@
 </form>
 <!-- items_list.end ---------------------------------------->
 
-		<div class="pull-right">
-
 <!-- promo_code -------------------------------------------->
 <form class="form-inline" action="/cart/promo_code" name="apply_promo_code" method="post" autocomplete="off">
 	<div class="input-append">
-		<input type="text" name="promo_code" class="span4" placeholder="Promo code" maxlength="256" autofocus="autofocus">
+		<input type="text" name="promo_code" class="span12 promo-code" placeholder="Promo code" maxlength="256" autofocus="autofocus">
 		<button type="submit" class="btn">Apply</button>
 	</div>
 </form>
 <!-- promo_code.end ---------------------------------------->
-		</div>
 
 		<div id="cart-total-div">
 			<!-- total -------------------------------------------->
@@ -253,7 +243,6 @@
 
 		<form action="/cart/process" method="post" accept-charset="utf-8" class="form-horizontal" id="form_payment">            <input type="hidden" name="failed_return_url" value="cart" />
 
-
 <!-- payment_method -------------------------------------------->
 	<div id="payment_methods" class="control-group well well-small">
 		<label class="control-label" for="payment_method">Payment Method</label>
@@ -271,6 +260,8 @@
 
 <!-- payment_method.end ---------------------------------------->
 
+<div class="row-fluid">
+<div class="span12">
 
 <!-- payment_details -------------------------------------------->
 <div class="panel payment_type" id="payment-method-1" name="card">
@@ -278,7 +269,7 @@
 	<div class="control-group">
 		<label class="control-label" for="select_saved_card">Select Saved Card</label>
 		<div class="controls">
-			<select name="select_saved_card" id="select_saved_card" class="span8">
+			<select name="select_saved_card" id="select_saved_card" class="span16">
 									<option value="new" selected="selected">New Credit Card</option>
 							</select>
 		</div>
@@ -324,14 +315,14 @@
 			<div class="control-group">
 				<label class="control-label" for="card_number">Card Number</label>
 				<div class="controls">
-					<input type="tel" id="card_number" name="card_number" autocomplete="off" autofocus="autofocus" maxlength="16" class="span8">
+					<input type="tel" id="card_number" name="card_number" autocomplete="off" autofocus="autofocus" maxlength="16" class="span16">
 				</div>
 			</div>
 
 			<div class="control-group">
 				<label class="control-label" for="expiry_month">Expiry Date</label>
 				<div class="controls">
-					<select name="expiry_month" class="span2">
+					<select name="expiry_month" class="span6">
 						<option selected="selected" value="">MM</option>
 						<option value="01">01</option>
 						<option value="02">02</option>
@@ -346,7 +337,7 @@
 						<option value="11">11</option>
 						<option value="12">12</option>
 					</select>
-					<select name="expiry_year" class="span3">
+					<select name="expiry_year" class="span6">
 						<option selected="selected" value="">YYYY</option>
 						<option value="12">2012</option><option value="13">2013</option><option value="14">2014</option><option value="15">2015</option><option value="16">2016</option><option value="17">2017</option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option><option value="21">2021</option>
 					</select>
@@ -356,7 +347,7 @@
 							<div class="control-group">
 					<label class="control-label" for="security_code">Security Code</label>
 					<div class="controls">
-						<input type="tel" name="security_code" placeholder="CCV" autocomplete="off" class="span2">
+						<input type="tel" name="security_code" placeholder="CCV" autocomplete="off" class="span6">
 					</div>
 				</div>
 
@@ -460,6 +451,8 @@
 </div>
 <!-- payment_details.end ---------------------------------------->
 
+</div>
+<div class="span12">
 
 <!-- billing_details -------------------------------------------->
 <h3>Billing Information</h3>
@@ -467,26 +460,26 @@
 <div class="control-group">
 	<label class="control-label" for="billing_name">Contact name</label>
 	<div class="controls">
-		<input type="text" name="billing_name" value="Test Ted" id="billing_name" class="span8"  />    </div>
+		<input type="text" name="billing_name" value="Test Ted" id="billing_name" class="span16"  />    </div>
 </div>
 
 <div class="control-group">
 	<label class="control-label" for="phone">Contact phone</label>
 	<div class="controls">
-		<input type="tel" name="phone" value="0212345678" id="phone" class="span8"  />    </div>
+		<input type="tel" name="phone" value="0212345678" id="phone" class="span16"  />    </div>
 </div>
 
 <div class="control-group">
 	<label class="control-label">Address</label>
 	<div class="controls multiple-controls">
-		<input type="text" name="address_one" value="10 Victoria St" id="address_one" class="span8"  />
-		<input type="text" name="address_two" value="" class="span8"  />    </div>
+		<input type="text" name="address_one" value="10 Victoria St" id="address_one" class="span16"  />
+		<input type="text" name="address_two" value="" class="span16"  />    </div>
 </div>
 
 <div class="control-group">
 	<label class="control-label" for="country">Country</label>
 	<div class="controls">
-		<select name="country_id" id="country" class="span8">
+		<select name="country_id" id="country" class="span16">
 			<option value="24">Afghanistan</option>
 			<option value="26">Albania</option>
 			<option value="27">Algeria</option>
@@ -743,7 +736,7 @@
 <div id="region-wrapper" class="control-group">
 	<label class="control-label" for="region">Region/State</label>
 	<div class="controls">
-		<select name="region_id" id="region" class="span8">
+		<select name="region_id" id="region" class="span16">
 			<option value="2" selected="selected">Auckland</option>
 			<option value="5">Bay of Plenty</option>
 			<option value="14">Canterbury</option>
@@ -767,19 +760,21 @@
 <div class="control-group">
 	<label class="control-label" for="city_name">City/Town</label>
 	<div class="controls">
-		<input type="text" name="city_name" value="Wellington" id="city_name" class="span8"  />    </div>
+		<input type="text" name="city_name" value="Wellington" id="city_name" class="span16"  />    </div>
 </div>
 
 <div class="control-group">
 	<label class="control-label" for="post_code">Postcode</label>
 	<div class="controls">
-		<input type="text" name="postcode" value="5698" id="postcode" class="span8"  />
+		<input type="text" name="postcode" value="5698" id="postcode" class="span16"  />
 					<span class="help-inline"><a href="http://www.nzpost.co.nz/Cultures/en-NZ/OnlineTools/PostCodeFinder/" target="_blank">Find Postcode</a></span>
 			</div>
 </div>
 
 <!-- billing_details.end ---------------------------------------->
 
+</div>
+</div>
 			<div class="form-actions clear-fix">
 				<button type="submit" id="purchase-button" class="btn btn-primary">Purchase</button>
 			</div>
@@ -800,12 +795,14 @@
 
 
 <!-- footer -------------------------------------------->
-	<div id="footer">
-		<div class="container">
-			<p class="pull-left">Copyright &copy; 2012 Test Tickets</p>
-			<p class="pull-right">Powered by <a href="http://www.dashtickets.co.nz" target="_blank">Dash Tickets</a></p>
-		</div>
-	</div>
+   <div id="footer">
+        <div class="container">
+        	<div class="wrap">
+            	<p class="pull-left">&copy; Crippen Place, Adelaide</p>
+            </div>
+        </div>
+    </div>
+	<script src="assets/js/crippen.js"></script>
 </body>
 </html>
 

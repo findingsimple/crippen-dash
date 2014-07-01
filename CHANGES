@@ -1,0 +1,26 @@
+Assumptions
+
+- Template titles and meta description will be updated/controlled through dash tickets
+
+Broad/global changes listed here. Otherwise see the github repo for exact line edits.
+
+- favicon meta tags removed (not provided/used)
+- bootstrap responsive styles removed (responsive designs not provided/used)
+- add #header div above the navbar on all pages for crippen place branding and social buttons
+- navbar simplified
+- #footer div reference removed as per provided designs
+- use row-fluid instead of row (works better for different width containers )
+- breadcrumbs consistently moved between nav and main content. Wrapped in own "row-fluid" div/class to make consistently full width and appear in the same spot
+- added masonry and images loaded scripts to the head (needed for the provided design).
+- added crippen.js to the footer to call masonry etc.
+- thumbnail size used changed to 312x180 as per provided designs
+- event list meta information order changed e.g. Title, Thumbnail, Date, Description, Venue, Tags
+- added heading to account nav area as per provided designs
+- removed carousel from event ticket page - not in provided designs
+- removed "you may also like section" from event ticket page - not in provided designs
+- missing td and unclosed ul on payment history page - as well as spacing clean ups
+
+
+Questions
+- Will the membership cards page/template have breadcrumbs like the other accounts page? Template provided doesn't appear to have them. If so - they can setup the same as the others.
+- I'm not sure the seat selection templates will be used - so I've left for the time being

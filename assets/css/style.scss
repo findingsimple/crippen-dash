@@ -1,0 +1,1049 @@
+/**
+ * Oswald Google Font
+ */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/**
+ * Body and links
+ */
+html {
+	overflow-y: scroll;
+}
+body {
+	margin:0;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color:#fff;
+	background:#000 url(../img/crippen/bg.jpg) repeat scroll top center;
+	font-weight:400;
+}
+a {
+	color: #fff;
+	text-decoration:none;
+
+	&:hover {
+		color:#fff;
+		text-decoration:underline;
+	}
+}
+
+/**
+ * Headings, default content
+ */
+p {
+	margin:0 0 9px;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+
+	small{
+		font-size:11px;
+		color:#999999;
+	}
+}
+.lead {
+	margin-bottom:18px;
+	font-size:20px;
+	font-weight:200;
+	line-height:27px;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	color:inherit;
+	text-rendering:optimizelegibility;
+
+	small {
+		font-weight:normal;
+		color:#999999;
+	}
+}
+h1 {
+	font-size:21px;
+	line-height:1;
+
+	small {
+		font-size:18px;
+	}
+}
+h2 {
+	font-size:24px;
+	line-height:36px;
+
+	small {
+		font-size:18px;
+	}
+}
+h3 {
+	font-size:18px;
+	line-height:27px;
+
+	small {
+		font-size:14px;
+	}
+}
+h4,h5,h6 {
+	line-height:18px;
+}
+h4 {
+	font-size:14px;
+
+	small {
+		font-size:12px;
+	}
+}
+h5{
+	font-size:12px;
+	}
+h6{
+	font-size:11px;
+	color:#999999;
+	text-transform:uppercase;
+}
+
+.page-header {
+	padding: 0 0 2px 0;
+	margin: 0 0 13px 0 ;
+	border: none;
+	background: transparent url(../img/crippen/topdivider.png) no-repeat scroll bottom left;
+
+	h1 {
+		padding: 15px 0;
+		line-height: 1;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+}
+
+ul,ol{padding:0;margin:0 0 9px 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+li{line-height:18px;}
+ul.unstyled,ol.unstyled{margin-left:0;list-style:none;}
+dl{margin-bottom:18px;}
+dt,dd{line-height:18px; word-wrap:break-word;}
+dt{font-weight:700;line-height:17px;}
+dd{margin-left:9px;}
+.dl-horizontal dt{float:left;clear:left;width:120px;text-align:left;}
+.dl-horizontal dd{margin-left:130px;}
+hr{margin:18px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
+strong{font-weight:700;}
+em{font-style:italic;}
+.muted{color:#fff;}
+abbr[title]{border-bottom:1px dotted #ddd;cursor:help;}
+abbr.initialism{font-size:90%;text-transform:uppercase;}
+blockquote{padding:0 0 0 15px;margin:0 0 18px;border-left:5px solid #eeeeee;}blockquote p{margin-bottom:0;font-size:16px;font-weight:300;line-height:22.5px;}
+blockquote small{display:block;line-height:18px;color:#999999;}blockquote small:before{content:'\2014 \00A0';}
+blockquote.pull-right{float:right;padding-left:0;padding-right:15px;border-left:0;border-right:5px solid #eeeeee;}blockquote.pull-right p,blockquote.pull-right small{text-align:right;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
+address{display:block;margin-bottom:18px;line-height:18px;font-style:normal;}
+small{font-size:100%;}
+cite{font-style:normal;}
+
+/**
+ * Header
+ */
+
+#header {
+	background: transparent;
+	color: #fff;
+
+	.container {
+		padding-top: 16px;
+		padding-bottom: 8px;
+	}
+}
+#site-title {
+	width: 50%;
+
+	a {
+		color: #fff;
+		margin-top: 4px;
+		margin-bottom: 2px;
+		font-weight: 900;
+		text-transform: uppercase;
+		padding: 0;
+		height: 70px;
+		text-indent: -9999px;
+		display: block;
+		width: 100%;
+		background:transparent url(../img/crippen/logo.png) no-repeat scroll top left;
+	}
+
+}
+#site-description {
+	display: none;
+}
+
+.social-media-links {
+	float:right;
+	line-height:26px;
+	margin-bottom:13px;
+
+	a {
+		margin-top: 4px;
+		display: block;
+		text-indent:-9999px;
+		float:left;
+		margin-right:8px;
+
+		&.facebook {
+			width:9px;
+			height:18px;
+			background:transparent url('../img/crippen/facebook.png') no-repeat scroll top right;
+		}
+		&.twitter {
+			width:23px;
+			height:18px;
+			background:transparent url('../img/crippen/twitter.png') no-repeat scroll top right;
+			border-left:1px solid #fff;
+			padding-left:5px;
+			margin-right:7px;
+		}
+		&.vimeo {
+			width:17px;
+			height:18px;
+			background:transparent url('../img/crippen/vimeo.png') no-repeat scroll top right;
+			border-left:1px solid #fff;
+			padding-left:7px;
+		}
+	}
+}
+
+/* Menu
+================================================*/
+
+#menu-primary {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	float: none;
+	clear: both;
+
+	.wrap {
+		height: 26px;
+		padding-bottom: 14px;
+		background: transparent url(../img/crippen/topdivider.png) no-repeat scroll bottom left;
+	}
+	ul {
+		margin: 0;
+	}	
+	li {
+		list-style:none;
+		float: left;
+	}
+	.nav {
+		padding-left:15px;
+		background-color:#fff;
+		float: left; 
+		text-transform:uppercase; 
+		width:948px;
+		height:26px;
+		line-height:26px;
+
+		.pull-right {
+			margin-right:13px;
+		}
+
+		.divider-vertical {
+			display: none !important;
+		}
+
+		li {
+			margin-left:15px;
+			padding-left:25px;
+			margin-top:4px;
+			background:transparent url(../img/crippen/menuborder.png) no-repeat scroll center left;
+
+			&:first-child {
+				margin-left:0;
+				padding-left:0;
+				background:none;
+			}
+
+			ul.dropdown-menu {
+
+				li {
+					margin-left:0;
+					padding-left:0;
+					background: none;
+				}
+			}
+		}
+		a {
+			color: #000;
+			line-height:14px;
+
+			.caret {
+				border-top-color: #000 !important;
+				border-bottom-color:  #000 !important;
+			}
+
+			&:hover {
+				color: #333;
+				background:transparent;
+			}
+		}
+	}
+}
+
+/**
+ * Breadcrumbs
+ */
+.breadcrumb {
+	background: none;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 2px 0 10px 0;
+	background: transparent url(../img/crippen/topdivider.png) no-repeat scroll bottom left;
+	margin-bottom: 0;
+
+	li {
+		text-shadow: none;
+	}
+}
+
+/* Main Content
+================================================*/
+
+/* Images 
+================================================*/
+
+.hentry .thumbnail {
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 0 15px 10px 0;
+	}
+.entry-content img {
+	height: auto;
+	padding: 4px;
+	border:1px solid #ddd;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.075);
+	}
+
+/* Max-widths for images */
+img {
+	max-width: 100%;
+}
+
+/* Content
+================================================*/
+
+#content {
+	padding: 0;
+}
+
+.table {
+	th, td {
+		border-top: 0;
+		padding-left: 0;
+	}
+	th {
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	tr {
+		background: transparent url(../img/crippen/topdivider.png) no-repeat scroll top left;
+		font-size: 14px;
+	}
+	thead tr {
+		background: none;
+	}
+}
+
+/* Event List
+================================================*/
+
+.event-list {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+
+	li {
+		display: block;
+		width: 312px;
+		margin-right: 12px;
+		float: left;
+		background: transparent url(../img/crippen/wavyline.png) repeat-x scroll bottom left;
+
+		& + li {
+			border: none;
+		}
+
+		&:nth-child(3n+3) {
+			marign-right: 0;
+		}
+
+		.event-title {
+			font-size:21px;
+			padding-bottom:4px;
+			background: transparent url(../img/crippen/subwidgborder.png) no-repeat scroll bottom left;
+			text-transform: uppercase;
+			font-weight: normal;
+			line-height: 34px;
+			margin: 0 0 9px 0;
+
+			a {
+				color:#fff;
+
+				&:hover {
+					color:#cce2ff;
+					text-decoration:none;
+				}
+			}
+		}
+
+		.event-thumbnail {
+			width: 100%;
+			float: none;
+			border: 2px solid #fff;
+			-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+			position: relative;
+			margin: 0 0 15px 0;
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			.sold-out {
+				padding: 10px;
+				background: none;
+				width: 30px;
+				height: 40px;
+				position: absolute;
+				top:0;
+				right:0;
+				left: auto;
+				color: #fff;
+				text-align: center;
+				font-size: 12px;
+			}
+		}
+
+		.event-date {
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0 0 10px 0;
+		}
+
+		.event-description {
+			margin: 0 0 10px 0;
+			font-size: 12px;
+		}
+
+		.event-venue {
+			margin: 0 0 10px 0;
+			font-size: 12px;
+
+			a {
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+
+		.event-tags {
+			margin: 0 0 10px 0;
+			font-size: 12px;
+
+			a {
+				color: #fff;
+				font-weight: bold;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+	li:nth-child(3n+3) {
+		margin-right: 0;
+	}
+}
+
+/* Event Ticket Page
+================================================*/
+
+#ticket-options {
+	padding-bottom: 15px;
+	background: transparent url(../img/crippen/wavyline.png) repeat-x scroll bottom left;
+
+	h3 {
+		padding: 15px 0 25px 0;
+		font-size: 21px;
+		line-height: 1;
+		margin: 0;
+		text-transform: uppercase;
+		background: transparent url(../img/crippen/footerborder.png) repeat-x scroll bottom left;
+	}
+	h4 {
+		padding: 15px 0 5px 0;
+		font-size: 16px;
+		line-height: 1;
+		margin: 0 0 7px 0;
+		text-transform: uppercase;
+	}
+	.table th,
+	.table td {
+		border: none;
+		padding: 8px 0;
+	}
+}
+
+.btn {
+	background: transparent !important;
+	border: 2px solid #fff !important;
+	color: #fff;
+	text-shadow: none;
+	font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+
+	&.btn-large {
+		padding: 5px 10px;
+	}
+
+	&:hover {
+		color: #fff;
+	}
+	// Disabled state
+	&.disabled,
+	&[disabled] {
+		cursor: default;
+		background-image: none;
+		opacity: 0.65;
+		-webkit-opacity: 0.65;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		color: #fff;
+	}
+}
+.btn-primary {
+	background: #fff !important;
+	border: 2px solid #fff !important;
+	color: #000;
+	text-shadow: none;
+	font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+
+	&.btn-large {
+		padding: 5px 10px;
+	}
+
+	&:hover {
+		color:#000;
+	}
+
+	// Disabled state
+	&.disabled,
+	&[disabled] {
+		cursor: default;
+		background-image: none;
+		opacity: 0.65;
+		-webkit-opacity: 0.65;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		color: #000;
+	}
+}
+
+#event-wrapper {
+	padding-top: 15px;
+
+	.event-image {
+		width: 100%;
+		margin: 0 0 15px 0;
+		padding: 0;
+		max-width: 100%;
+		border: 2px solid #fff;
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+
+	.page-header h1 {
+		padding-top: 0;
+	}
+
+}
+
+/* Alerts
+================================================*/
+
+.alert{
+	background: transparent url("../img/crippen/topdivider.png") repeat-x scroll bottom left;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #fff;
+	text-shadow: none;
+	padding: 10px 0;
+
+	h4 {
+		text-shadow: none;
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: none;
+		font-size: 21px;
+		margin: 0 0 10px 0 ;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+	.close {
+		color: #fff;
+		text-shadow: none;
+  		position: relative;
+  		top: -2px;
+  		right: 10px;
+	}
+}
+
+/* Complete Page Specific Styles
+================================================*/
+
+.complete-page {
+	.complete-info {
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.dl-horizontal dt {
+		text-align: left;
+	}
+}
+
+#payment_methods {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+}
+#form_payment h3 {
+	font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	background: transparent url(../img/crippen/footerborder.png) no-repeat scroll bottom left;
+	padding: 15px 0;
+	margin-bottom: 15px;
+}
+.form-actions {
+	border: none;
+}
+.row-fluid .uneditable-input.span6 {
+	width: 23.4043%;
+}
+.row-fluid .uneditable-input.span16 {
+	width: 65.9574%;
+}
+
+/* Pagination
+================================================*/
+
+.pagination {
+	clear: both;
+
+	ul {
+
+		li {
+
+			&.active a {
+				background: none;
+			}
+
+			a {
+				border:none;
+				color:#fff;
+				background: none;
+				border-radius: 0;
+				-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+
+				&:hover{
+					text-decoration:none;
+					color:#cce2ff;
+					background: none;
+					border-radius: 0;
+					-moz-border-radius: 0;
+					-webkit-border-radius: 0;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Footer
+ */
+#footer {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+
+	.wrap {
+		padding: 21px 0 20px 0;
+		background: transparent url(../img/crippen/footerborder.png) no-repeat scroll top left;
+
+		p {
+			padding: 0;
+			margin: 0;
+			font-size: 9px!important;
+			line-height: 1;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #fff;
+		}
+	}
+}
+
+/**
+ * Nav Tabs Adjustments
+ */
+#account-nav {
+
+	h4 {
+		font-size: 21px;
+		line-height: 1;
+		text-transform: uppercase;
+		padding: 15px 0;
+	}
+
+	.nav-stacked {
+		padding-bottom: 15px;
+		background: transparent url(../img/crippen/wavyline.png) repeat-x scroll bottom left;
+
+		li {
+			background: transparent url(../img/crippen/topdivider.png) no-repeat scroll top left;
+			color: #fff;
+
+			&.active a {
+				color: #999;
+			}
+
+			a {
+				padding: 15px 0;
+				background: none;
+				border: none;
+				font-size: 16px;
+				line-height: 1;
+				font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: 400;
+			}
+		}
+	}
+
+}
+
+/**
+ * Purchase history & Membership Card Page
+ */
+.membership-cards-page,
+.purchase-history-page {
+	table {
+		text-transform: uppercase;
+
+		th, td {
+			border-top: 0;
+			padding-left: 0;
+		}
+		th {
+			font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 18px;
+		}
+		td {
+			font-size: 14px;
+		}
+		a {
+			color: #fff;
+
+			i {
+				margin-bottom: -1px;
+			}
+		}
+	}
+}
+
+/**
+ * Form Adjustments
+ */
+.form-horizontal,
+#ticket-form,
+#login-form,
+.form-inline {
+
+	.control-label {
+		text-align: left;
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+	}
+
+	textarea,
+	input[type="text"], 
+	input[type="password"], 
+	input[type="datetime"], 
+	input[type="datetime-local"], 
+	input[type="date"], 
+	input[type="month"], 
+	input[type="time"], 
+	input[type="week"], 
+	input[type="number"], 
+	input[type="email"], 
+	input[type="url"], 
+	input[type="search"], 
+	input[type="tel"], 
+	input[type="color"],
+	.uneditable-input {
+		background: transparent;
+		color: #fff;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border: 3px solid #fff;
+		line-height: 1;
+	}
+
+	select {
+		background: transparent url(../img/crippen/select-dropdown.png) no-repeat scroll center right;
+		color: #fff;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		border: 3px solid #fff;
+		line-height: 1;
+	}
+	select::-ms-expand {
+	    display: none;
+	}
+	.multiple-controls {
+		input {
+			display:block;
+		}
+	}
+}
+.form-actions {
+	background: none;
+}
+
+.promo-code {
+	height: 32px !important;
+	border-right: 1px solid #fff !important;
+}
+
+@-moz-document url-prefix() { 
+	.form-horizontal select,
+	#ticket-form select,
+	.form-inline select,
+	#login-form select {
+		background: none !important;
+	}
+}
+
+/* Modals
+================================================*/
+
+.modal,
+.modal * {
+	color: #000 !important;
+
+	textarea,
+	input[type="text"], 
+	input[type="password"], 
+	input[type="datetime"], 
+	input[type="datetime-local"], 
+	input[type="date"], 
+	input[type="month"], 
+	input[type="time"], 
+	input[type="week"], 
+	input[type="number"], 
+	input[type="email"], 
+	input[type="url"], 
+	input[type="search"], 
+	input[type="tel"], 
+	input[type="color"],
+	.uneditable-input {
+		background: transparent;
+		color: #000;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border: 3px solid #000;
+		line-height: 1;
+	}
+
+	select {
+		background: transparent url(../img/crippen/select-dropdown.png) no-repeat scroll center right;
+		color: #000;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		border: 3px solid #000;
+		line-height: 1;
+	}
+	select::-ms-expand {
+	    display: none;
+	}
+	.multiple-controls {
+		input {
+			display:block;
+		}
+	}
+
+}
+
+/**
+ * Login Page
+ */
+#login-wrapper {
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+/**
+ * Map
+ */
+.map {
+	padding-top: 15px;
+}
+
+/**
+ * Cart
+ */
+
+#cart_items {
+	th,td {
+		border: 0;
+		padding-left: 0;
+	}
+	.item_image img {
+		border: 2px solid #fff;
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+	h4 {
+		font-size: 16px;
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+/**
+ * Outlet & Venues
+ */
+td.event-thumbnail, 
+.event-thumbnail img {
+	width: 312px;
+	height: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.event-thumbnail img {
+	border: 2px solid #fff;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.venue-information,
+.outlet-information {
+	padding-bottom: 10px;
+	background: transparent url(../img/crippen/wavyline.png) repeat-x scroll bottom left;
+
+	dt {
+		font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+#outlet-section,
+#venue-section {
+
+	h3 {
+		padding: 15px 0;
+		font-size: 21px;
+		line-height: 1;
+		text-transform: uppercase;
+		margin: 0 0 5px 0 ;
+		border: none;
+	}
+
+	.table {
+		h4 {
+			font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+			text-transform: uppercase;
+			font-size: 16px;
+		}
+		td {
+			padding-right: 11px;
+		}
+	}
+}
+
+/**
+ * Layout
+ */
+
+#container {
+	height:100%;
+}
+
+.container {
+	background-color:rgba(0,0,0,0.6);
+	width: 964px;
+	margin: 0 auto;
+	padding: 0 13px;
+	*zoom: 1;
+	position: relative;
+
+	&:before,
+	&:after {
+		display:table;
+		content:"";
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+/* The End */
