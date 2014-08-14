@@ -828,9 +828,8 @@ img {
 		border: 3px solid #fff;
 		line-height: 1;
 	}
-
 	select {
-		background: transparent url(../img/crippen/select-dropdown.png) no-repeat scroll center right;
+		background: #000 url(../img/crippen/select-dropdown.png) no-repeat scroll center right;
 		color: #fff;
 		border-radius: 0;
 		-moz-border-radius: 0;
@@ -841,6 +840,12 @@ img {
 		text-overflow: '';
 		border: 3px solid #fff;
 		line-height: 1;
+		height: 1;
+		zoom: 1;
+
+		option {
+			background: #000;
+		}
 	}
 	select::-ms-expand {
 	    display: none;
